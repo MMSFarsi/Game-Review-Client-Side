@@ -16,8 +16,8 @@ const GameWatchList = () => {
 
   return (
   <div className='bg-gray-100 dark:bg-gray-800 dark:text-white'>
-      <div className="p-6 max-w-6xl mx-auto">
-      <h2 className=" text-xl lg:text-3xl font-bold mx-auto px-3 py-2 bg-[#F80136] text-white w-fit mb-8">My Watchlist</h2>
+      <div className="p-6 py-12 pb-24 max-w-6xl mx-auto">
+      <h2 className=" lg:text-3xl text-xl font-bold mx-auto px-3 py-2 bg-[#F80136] text-white w-fit mb-8">My Watchlist</h2>
       {watchlist.length > 0 ? (
         <div className="overflow-x-auto bg-white dark:bg-gray-100 shadow-lg rounded-lg">
           <table className="table-auto w-full text-gray-700">
@@ -36,7 +36,7 @@ const GameWatchList = () => {
                   <td className="px-2 lg:px-4 py-1 lg:py-2">{item.title}</td>
                   <td className="px-2 lg:px-4 py-1 lg:py-2">{item.publishingYear}</td>
                   <td className="px-2 lg:px-4 py-1 lg:py-2">{item.genre}</td>
-                  <td className="px-2 lg:px-4 py-1 lg:py-2">{item.rating}</td>
+                  <td className="px-2 lg:px-4 py-1 lg:py-2">{item.rating} Star</td>
               
                 </tr>
               ))}

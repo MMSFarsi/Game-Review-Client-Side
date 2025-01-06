@@ -16,6 +16,8 @@ import UpdateReview from './Pages/UpdateReview.jsx';
 import Error from './Components/Error.jsx';
 import PrivateRoute from './PrivateRoutes/PrivateRoute.jsx';
 import ThemeProvider from '../ThemeProvider.jsx';
+import AboutUs from './Pages/AboutUs.jsx';
+import ContactUs from './Pages/ContactUs.jsx';
 
 
 const router = createBrowserRouter([
@@ -44,6 +46,14 @@ const router = createBrowserRouter([
       {
         path:"/addreview",
         element:<PrivateRoute><AddReview></AddReview></PrivateRoute>
+      },
+      {
+        path:"/about-us",
+        element:<AboutUs></AboutUs>
+      },
+      {
+        path:"/contact-us",
+        element:<ContactUs></ContactUs>
       },
       {
         path:"/reviewdetails/:id",

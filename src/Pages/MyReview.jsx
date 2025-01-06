@@ -59,8 +59,8 @@ const MyReview = () => {
 
   return (
     <div className='bg-gray-100 dark:bg-gray-800 dark:text-white'>
-       <div className="p-6 max-w-6xl mx-auto">
-      <h2 className="text-xl lg:text-3xl font-bold mx-auto  bg-[#F80136] text-white w-fit mb-8">My Reviews</h2>
+       <div className="p-6 py-12 pb-24 max-w-6xl mx-auto">
+      <h2 className="lg:text-3xl text-xl font-bold mx-auto px-3 py-2 bg-[#F80136] text-white w-fit mb-8">My Reviews</h2>
       {reviews.length > 0 ? (
         <div className="overflow-x-auto bg-white dark:bg-gray-100 shadow-lg rounded-lg">
          <table className="table-auto w-full text-gray-700 text-sm sm:text-base">

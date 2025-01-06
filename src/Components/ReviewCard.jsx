@@ -21,7 +21,7 @@ const ReviewCard = ({ review }) => {
         </div>
       </figure>
       <div className="card-body p-4">
-        <h2 className="card-title text-xl font-bold dark:text-white text-gray-800 truncate">
+        <h2 className="card-title text-lg font-bold dark:text-white text-gray-800 truncate">
           {title}
         </h2>
         <p className="text-gray-600 dark:text-white text-sm mb-2 truncate">
@@ -31,11 +31,11 @@ const ReviewCard = ({ review }) => {
           <Rating
             initialRating={rating}
             readonly
-            emptySymbol={<span className="text-gray-300">☆</span>}
-            fullSymbol={<span className="text-amber-500">★</span>}
+            emptySymbol={<span className="text-black dark:text-white text-xl">☆</span>}
+            fullSymbol={<span className="text-red-500 text-xl">★</span>}
           />
           <Link to={`/reviewdetails/${_id}`}>
-            <button className="btn btn-sm btn-primary">View Details</button>
+            <button className="px-4 py-2 text-[12px] rounded-lg text-white bg-red-600 font-medium backdrop-blur-md hover:bg-opacity-50 transition duration-300 border hover:border-black">View Details</button>
           </Link>
         </div>
       </div>

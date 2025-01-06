@@ -1,4 +1,6 @@
-
+import gameImg from "/game.gif"
+import shareImg from "/share.gif"
+import comImg from "/com.gif"
 const About = () => {
   return (
     <section className="bg-gray-100 dark:bg-gray-800 dark:text-white py-12">
@@ -9,21 +11,25 @@ const About = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div className="p-6 flex flex-col items-center bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <img className="mb-3" src={gameImg} alt="" />
             <h3 className="text-2xl font-semibold mb-4  dark:text-black">Discover Games</h3>
             <p className="text-gray-600">
               Explore a wide variety of games, from the latest releases to timeless classics. Filter by genre, rating, or year to find your next adventure.
             </p>
           </div>
 
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div className="p-6 flex flex-col items-center bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <img className="mb-3" src={shareImg} alt="" />
             <h3 className="text-2xl font-semibold mb-4 dark:text-black">Share Reviews</h3>
+          
             <p className="text-gray-600">
               Share your gaming experiences and help others decide what to play next. Your insights and opinions matter!
             </p>
           </div>
 
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div className="p-6 flex flex-col items-center bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <img className="mb-3" src={comImg} alt="" />
             <h3 className="text-2xl font-semibold mb-4 dark:text-black">Build a Community</h3>
             <p className="text-gray-600">
               Connect with gamers worldwide. Join discussions, share tips, and make new friends through a shared passion for gaming.

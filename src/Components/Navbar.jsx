@@ -16,7 +16,7 @@ const Navbar = () => {
     } transition duration-300`;
 
   return (
-    <div className="navbar bg-white dark:bg-gray-800 dark:text-white text-black sticky top-0 z-50 shadow-md">
+    <div className="navbar px-0 lg:px-6 bg-white dark:bg-gray-800 dark:text-white text-black sticky top-0 z-50 shadow-md">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,19 +49,34 @@ const Navbar = () => {
                 ALL REVIEWS
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/addreview" className={navLinkStyles}>
-                ADD REVIEWS
+              {user && (
+      <>
+        <li>
+          <NavLink to="/addreview" className={navLinkStyles}>
+            ADD REVIEWS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/myreview" className={navLinkStyles}>
+            MY REVIEWS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/gamewatchlist" className={navLinkStyles}>
+            GAME WATCHLIST
+          </NavLink>
+        </li>
+      </>
+      
+    )}
+      <li>
+              <NavLink to="/about-us" className={navLinkStyles}>
+                ABOUT US
               </NavLink>
             </li>
             <li>
-              <NavLink to="/myreview" className={navLinkStyles}>
-                MY REVIEWS
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/gamewatchlist" className={navLinkStyles}>
-                GAME WATCHLIST
+              <NavLink to="/contact-us" className={navLinkStyles}>
+                CONTACT
               </NavLink>
             </li>
           </ul>
@@ -69,35 +84,49 @@ const Navbar = () => {
         <Link to='/'><h2 className=' text-[14px] lg:text-xl font-bold uppercase text-red-600 pl-0 lg:pl-5'>CHILL GAMER</h2></Link>
       </div>
 
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <NavLink to="/" className={navLinkStyles}>
-              HOME
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/allreviews" className={navLinkStyles}>
-              ALL REVIEWS
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/addreview" className={navLinkStyles}>
-              ADD REVIEWS
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/myreview" className={navLinkStyles}>
-              MY REVIEWS
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/gamewatchlist" className={navLinkStyles}>
-              GAME WATCHLIST
-            </NavLink>
-          </li>
-        </ul>
-      </div>
+     <div className="navbar-center hidden lg:flex">
+  <ul className="menu menu-horizontal px-1">
+    <li>
+      <NavLink to="/" className={navLinkStyles}>
+        HOME
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/allreviews" className={navLinkStyles}>
+        ALL REVIEWS
+      </NavLink>
+    </li>
+    {user && (
+      <>
+        <li>
+          <NavLink to="/addreview" className={navLinkStyles}>
+            ADD REVIEWS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/myreview" className={navLinkStyles}>
+            MY REVIEWS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/gamewatchlist" className={navLinkStyles}>
+            GAME WATCHLIST
+          </NavLink>
+        </li>
+      </>
+    )}
+       <li>
+              <NavLink to="/about-us" className={navLinkStyles}>
+                ABOUT US
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact-us" className={navLinkStyles}>
+                CONTACT
+              </NavLink>
+            </li>
+  </ul>
+</div>
 
       <div className="navbar-end flex items-center gap-4">
         <button

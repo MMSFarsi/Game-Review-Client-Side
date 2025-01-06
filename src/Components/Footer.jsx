@@ -4,14 +4,15 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className="bg-white dark:bg-black/90 dark:text-white text-black py-10">
+        <Link to='/'><h2 className=' text-center my-3 text-[14px] lg:text-2xl font-bold uppercase text-red-600 '>CHILL GAMER</h2></Link>
       <div className="container mx-auto px-4">
    
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
       
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">About Us</h3>
-            <p className="text-gray-400">
+            <p className="">
               Welcome to Chill Gamer Zone, your trusted source for unbiased and
               insightful game reviews. Stay updated on the latest gaming trends
               and share your experiences with our vibrant community.
@@ -33,6 +34,12 @@ const Footer = () => {
               </li>
               <li className="mb-2 hover:text-primary">
                 <Link to="/allreviews" className="hover:text-primary">All Reviews</Link>
+              </li>
+              <li className="mb-2 hover:text-primary">
+                <Link to="/about-us" className="hover:text-primary">About Us</Link>
+              </li>
+              <li className="mb-2 hover:text-primary">
+                <Link to="/contact-us" className="hover:text-primary">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -58,7 +65,7 @@ const Footer = () => {
 
    
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm ">
             &copy; {new Date().getFullYear()} Chill Gamer. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
