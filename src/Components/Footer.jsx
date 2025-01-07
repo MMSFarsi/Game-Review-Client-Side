@@ -5,13 +5,13 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-black/90 dark:text-white text-black py-10">
-        <Link to='/'><h2 className=' text-center my-3 text-[14px] lg:text-2xl font-bold uppercase text-red-600 '>CHILL GAMER</h2></Link>
+        <Link to='/'><h2 className=' text-center my-3 text-2xl font-bold uppercase text-red-600 '>CHILL GAMER</h2></Link>
       <div className="container mx-auto px-4">
    
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
       
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">About Us</h3>
+            <h3 className="text-xl font-semibold text-black dark:text-white mb-4">About Us</h3>
             <p className="">
               Welcome to Chill Gamer Zone, your trusted source for unbiased and
               insightful game reviews. Stay updated on the latest gaming trends
@@ -21,7 +21,7 @@ const Footer = () => {
 
 
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="text-xl font-semibold text-black dark:text-white mb-4">Quick Links</h3>
             <ul>
               <li className="mb-2 hover:text-primary">
                 <Link to="/" className="hover:text-primary">Home</Link>
@@ -46,7 +46,7 @@ const Footer = () => {
 
      
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Contact Us</h3>
+            <h3 className="text-xl font-semibold text-black dark:text-white mb-4">Contact Us</h3>
             <ul>
               <li className="mb-2">
                 <span className="font-bold">Email:</span> info@chillgamer.com

@@ -40,7 +40,8 @@ const Banner = () => {
       >
         {reviews.map((review, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-fit sm:h-[400px] md:h-[500px] lg:h-[500px]">
+            <div className="relative h-fit sm:h-[60vh] md:h-[80vh] lg:h-[80vh]
+">
               <Fade duration={1000} triggerOnce>
                 <img
                   src={review.photo}
