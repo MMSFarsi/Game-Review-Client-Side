@@ -1,4 +1,4 @@
-# Chill Gamer
+# Chill Gamer Games Review
 
 Welcome to Chill Gamer Zone, your trusted source for unbiased and insightful game reviews. Stay updated on the latest gaming trends and share your experiences with our vibrant community.
 
