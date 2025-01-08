@@ -68,5 +68,5 @@ Run `npm run dev` to run the project locally.
 
 ## Relevant Links
 - Live Site: https://chill-gamer-2ad33.web.app/
-- Server Link: 
+- Server Link: https://assignment-10-server-lime-nu.vercel.app/
   
